@@ -18,7 +18,9 @@ That's why it is being published.
 
 ## How to create empty tables for wikijs
 
+```bash
 psql -h localhost -U wikijs < wikijs_2.5.301_structure.sql
+```
 
 ## Prerequisits
 
