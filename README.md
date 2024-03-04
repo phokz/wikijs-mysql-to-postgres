@@ -1,4 +1,4 @@
-# rubycloner
+# wikijs-mysql-to-postgres
 
 > Ruby script to ease migration of wiki.js database from mysql to postgresql
 
@@ -39,14 +39,14 @@ We had several instances running with mysql. Default max upload size of 5MB is r
 
 - there are deprecated options in config file as well as options in admin panel
 - the displayed limits in asset manager does not react to changes in admin panel - maybe i18n without interpolation?
-- (wiki troubleshooting page)[https://docs.requarks.io/en/troubleshooting] states single reason - wrong proxy configuration
+- [wiki troubleshooting page](https://docs.requarks.io/en/troubleshooting) states single reason - wrong proxy configuration
 - uploading of larger files always fails with mysql, regardles the configuration in admin panel and even in no proxy scenario
 
 However, it seems to be working fine with postgres. So I decided to move the data from mysql to postgres.
 
-After struggling for quite some time with "official" way using pgloader, I managed to work around
-some issues with (authenticatioin)[https://github.com/dimitri/pgloader/issues/782),
-(table and column names)[https://github.com/dimitri/pgloader/issues/1427]. Then the next issue was having
+After struggling for quite some time with "official" way using `pgloader`, I managed to work around
+some issues with [authenticatioin](https://github.com/dimitri/pgloader/issues/782),
+[table and column names](https://github.com/dimitri/pgloader/issues/1427). Then the next issue was having
 all tables in different namespace, which I resolved by renaming original table to "public".
 The last drop was finding out that JSON serialized data are corrupted.
 
