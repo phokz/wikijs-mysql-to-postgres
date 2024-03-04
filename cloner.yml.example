@@ -1,0 +1,15 @@
+source_mysql:
+  host: localhost
+  username: root
+  password: strong_password
+  database: wikijs
+
+destination_postgresql:
+  host: localhost
+  user: wikijs
+  password: wikijsrocks
+  dbname: wikijs
+
+queries:
+  source: ["update pageHistory set extra = '{}' where extra is null;"]
+  destination: []
