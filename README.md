@@ -7,9 +7,9 @@ That's why it is being published.
 
 ## Quickstart
 
-- install prerequisits e.g. `sudo apt-get -y install ruby ruby-dev libmysqlclient-dev libpq-dev`
+- install prerequisits e.g. `sudo apt-get -y install ruby ruby-dev libmysqlclient-dev libpq-dev build-essential`
 - make script executable `chmod +x ./cloner.rb`
-- perform dry ruby to install needed gems `./cloner.rb` This may take some time, 
+- perform dry ruby to install needed gems: `./cloner.rb` This may take some time.
 - copy provided example config and edit to suit your needs: `cp cloner.yml.example cloner.yml && editor cloner.yml`
 - run the cloner again `./cloner.rb`
 - watch for errors, if there are none, reconfigure wiki to use the new database
