@@ -1,14 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'bundler/inline'
-
-gemfile do
-  gem 'pg', '~> 1.5.5'
-  gem 'mysql2', '~> 0.5.6'
-  gem 'tsort', '~> 0.1.1'
-  gem 'yaml'
-end
+require 'bundler/setup'
+require 'yaml'
+require 'mysql2'
+require 'pg'
+require 'tsort'
 
 class Hash
   include TSort

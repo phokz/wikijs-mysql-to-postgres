@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bundler-audit (0.9.2)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
+    mysql2 (0.5.6)
+    pg (1.5.9)
+    psych (5.1.2)
+      stringio
+    stringio (3.1.1)
+    thor (1.4.0)
+    tsort (0.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler-audit (~> 0.9.2)
+  mysql2 (~> 0.5.6)
+  pg (~> 1.5.5)
+  psych
+  tsort (~> 0.1)
+
+RUBY VERSION
+   ruby 2.7.0p0
+
+BUNDLED WITH
+   2.1.2
