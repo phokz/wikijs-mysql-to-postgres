@@ -8,10 +8,10 @@ That's why it is being published.
 ## Quickstart
 
 - install prerequisits e.g. `sudo apt-get -y install ruby ruby-dev libmysqlclient-dev libpq-dev build-essential`
-- make script executable `chmod +x ./cloner.rb`
 - configure bundler and install needed gems: `bundle config set path 'vendor/bundle' && bundle install` (this may take some time)
 - copy provided example config and edit to suit your needs: `cp cloner.yml.example cloner.yml && editor cloner.yml`
-- run the cloner again `./cloner.rb`
+- make script executable `chmod +x ./cloner.rb`
+- run the cloner `./cloner.rb`
 - watch for errors, if there are none, reconfigure wiki to use the new database
 
 > :warning: **Dangerous, but usefull option**: perform truncate on target tables: `./cloner.rb --truncate`

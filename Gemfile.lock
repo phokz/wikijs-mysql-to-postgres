@@ -1,19 +1,24 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.3.1)
     bundler-audit (0.9.2)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
-    mysql2 (0.5.6)
+    date (3.5.0)
+    mysql2 (0.5.7)
+      bigdecimal
     pg (1.5.9)
-    psych (5.1.2)
+    psych (5.2.6)
+      date
       stringio
-    stringio (3.1.1)
+    stringio (3.1.8)
     thor (1.4.0)
     tsort (0.2.0)
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   bundler-audit (~> 0.9.2)
@@ -23,7 +28,7 @@ DEPENDENCIES
   tsort (~> 0.1)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 3.4.4p34
 
 BUNDLED WITH
-   2.1.2
+   2.6.7
