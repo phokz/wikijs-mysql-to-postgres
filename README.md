@@ -12,6 +12,7 @@ That's why it is being published.
 - copy provided example config and edit to suit your needs: `cp cloner.yml.example cloner.yml && editor cloner.yml`
 - make script executable `chmod +x ./cloner.rb`
 - run the cloner `./cloner.rb`
+- **IMPORTANT**: fix PostgreSQL sequences `./fix_sequences.rb` (prevents "duplicate key" errors)
 - watch for errors, if there are none, reconfigure wiki to use the new database
 
 > :warning: **Dangerous, but usefull option**: perform truncate on target tables: `./cloner.rb --truncate`
